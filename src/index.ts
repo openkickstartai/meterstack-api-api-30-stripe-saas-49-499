@@ -3,6 +3,9 @@ import { InMemoryStore, UsageStore } from './store';
 
 export type { UsageStore } from './store';
 export { InMemoryStore } from './store';
+export { createQuotaMiddleware, MemoryQuotaStore } from './quota';
+export type { Plan, QuotaUsageStore, QuotaCheckResult, QuotaMiddlewareOptions } from './quota';
+
 
 export interface PlanConfig {
   requestsPerMonth: number;
